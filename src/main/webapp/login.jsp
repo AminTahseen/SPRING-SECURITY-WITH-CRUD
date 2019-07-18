@@ -7,10 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Login</h2>
-${SPRING_SECURITY_LAST_EXCEPTION.message}
 <form action="login" method="post">
-<table>
+
+<table align="center">
+<caption>
+<h3>Login Now</h3>
+</caption>
 
 <tr>
 <td>Username</td>
@@ -19,15 +21,18 @@ ${SPRING_SECURITY_LAST_EXCEPTION.message}
 
 <tr>
 <td>Password</td>
-<td><input type="text" name="password"></td>
+<td><input type="password" name="password"></td>
 </tr>
 
 <tr>
-<td><input type="submit"></td>
+<td><input type="submit" value="login"></td>
 </tr>
 
 </table>
 </form>
+<center>
+<p style="color:red;">${SPRING_SECURITY_LAST_EXCEPTION.message} </p>
+</center>
 
 </body>
 </html>
